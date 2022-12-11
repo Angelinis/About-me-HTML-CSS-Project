@@ -1,0 +1,159 @@
+@import url(reset.css);
+@import url(global.css);
+@import url(containers.css);
+
+.header_container {
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right_header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.right_header ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.right_header li {
+  list-style: none;
+  color: var(--color-button)
+}
+
+.right_header a{
+  text-decoration: none;
+  color: var(--color-button)
+}
+
+.header_button{
+  padding: 8px 12px;
+  background-color: var(--color-button);
+  color: var(--color-text-button);
+  border-radius: 8px;
+  border: none;
+}
+
+
+.section_introduction_container span{
+  color: var(--color-button);
+}
+
+.section_introduction{
+  background-color: var(--color-about-background);
+}
+
+.skills_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(352px, 1fr));
+  grid-template-rows: repeat(auto-fit,minmax(1fr, 149px));
+  gap:32px;
+}
+
+.section_skills_container h2{
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.skill_container p{
+  
+  margin-bottom: 7px;
+  margin-top: 12px;
+}
+
+.skill_title {
+  display: flex;
+  gap: 19.2px;
+}
+
+.section_hobbies{
+  text-align: center;
+  background-color: var(--color-hobbies-background);
+}
+
+.section_hobbies_container h2{
+  margin-bottom: 16px;
+}
+
+.hobbie_container{
+  padding: 8px;
+  max-width: 319px;
+  min-width: 236px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hobbie_container h3{
+  margin-bottom: 10px;
+}
+
+
+
+.hobbies_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(319px,1fr));
+  grid-template-rows: repeat(auto-fit,minmax(1fr, 235px));
+  gap:16px;
+}
+
+.hobbie_image{
+  /* max-width: 319px; */
+  min-width: 319px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px;
+  height: 230px;
+}  
+
+/* #aqui está el problema ... ayuda a ordenar, pero no cuando se achica */
+/* 
+.grid_2_1{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.grid_2_2{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.grid_2_3{
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.grid_1_2{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid_1_3{
+  grid-column: 3;
+  grid-row: 1;
+} */
+
+.footer_section{
+  background-color: var(--color-about-background);
+}
+
+.footer_container{
+  text-align: center;
+}
+
+.footer_button{
+  padding: 14px 24px;
+  margin-top: 32px;
+  background-color: var(--color-button);
+  color: var(--color-text-button);
+  border-radius: 8px;
+  border: none;
+}

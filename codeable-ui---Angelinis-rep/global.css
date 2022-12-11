@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --default-font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  --light: 300;
+  --regular: 400;
+  --semibold: 600;
+  --color-home: #A8A29E;
+  --color-button: #DB2777;
+  --color-button-hover:  #BE185D;
+  --color-button-active: #9D174D;
+  --color-text-button: #FCE7F3;
+  --color-about-background: #D6D3D1;
+  --color-hobbies-background: #E5E7EB;
+
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+.light{
+  font-weight: var(--light);
+}
+
+.regular{
+  font-weight: var(--regular);
+}
+
+.semibold{
+  font-weight: var(--semibold);
+}
+
+.heading-xl {
+  font-size: calc(48/16*1rem);
+  line-height: 1.2;
+}
+
+.heading-lg {
+  font-size: calc(36/16*1rem);
+  line-height: 1.2;
+}
+
+.heading-md {
+  font-size: calc(30/16*1rem);
+  line-height: 1.2;
+}
+
+.heading-sm {
+  font-size: calc(24/16*1rem);
+  line-height: 1.2;
+}
+
+.heading-xs {
+  font-size: calc(20/16*1rem);
+  line-height: 1.2;
+}
+
+.text-xl {
+  font-size: calc(20/16*1rem);
+  line-height: 1.5;
+}
+
+.text-lg {
+  font-size: calc(18/16*1rem);
+  line-height: 1.5;
+}
+
+.text-md {
+  font-size: calc(16/16*1rem);
+  line-height: 1.5;
+}
+
+.text-sm {
+  font-size: calc(14/16*1rem);
+  line-height: 1.5;
+}
+
+.text-xs {
+  font-size: calc(12/16*1rem);
+  line-height: 1.5;
+}
+
+.paragraph-1 {
+  padding-top: 16px;
+}
+
+.paragraph-2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button-created:hover{
+  background-color: var(--color-button-hover);
+}
+
+.button-created:active{
+  background-color: var(--color-button-active);
+}
+
+.button-created:disabled{
+  opacity: 60%;
+}
+
+.button-created:focus{
+  box-shadow: 0px 0px 0px 3px #60A5FA;
+}
