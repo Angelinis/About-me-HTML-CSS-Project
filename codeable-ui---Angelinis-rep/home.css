@@ -120,3 +120,62 @@
 .button-header:hover{
   background-color: var(--color-button-hover);
 }
+
+.menu {
+  height: 16px;
+}
+
+.mobile-header{
+  width: 100%;
+  justify-content: end;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+
+}
+
+.mobile-menu ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding-left: 0px;
+}
+
+ 
+.mobile-menu li,
+.mobile-menu button
+{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .header-container p {
+    margin-left: 0px;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+  .mobile-menu--open {
+    display: flex;
+    flex-direction: column;
+  } 
+}

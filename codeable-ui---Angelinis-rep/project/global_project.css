@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --font-family-primary:  "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  --regular: 400;
+  --light: 300;
+  --semibold: 600;
+  --action-color: #DB2777;
+  --action-color-2: #BE185D;
+  --button-text-color: #FFFFFF;
+  --background-section-1: #F3F4F6;
+  --background-section-2: #D6D3D1;
+  --text-color:#111827;
+  
+}
+
+body {
+  color: #111827;
+  font-family: var(--font-family-primary);
+}
