@@ -89,8 +89,8 @@ export const global = css`
     line-height: 1.5rem;
     font-family: ${font.primary};
     color: ${colors.black};
-    width: 414px;
+    width: 100%;
     margin: auto;
-    background: ${colors.pink[200]};
+    background: ${colors.transparentBlack};
   }
 `;
