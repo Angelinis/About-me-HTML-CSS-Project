@@ -6,15 +6,15 @@ import ProfileImage from "../components/ProfileImage";
 import { colors } from "../styles";
 
 const ProfileContainer = styled.div`
-width: 1000px;
+width: 1200px;
 margin-right: auto;
 margin-left: auto;
 margin-top: 6rem;
 display: flex;
 ` 
 const Header = styled.h2`
-  line-height: 3rem;
-  font-size: 3rem;
+  line-height: 4rem;
+  font-size: 4rem;
   color: ${colors.stone[300]};
   text-align: center;
 `
