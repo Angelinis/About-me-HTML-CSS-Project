@@ -85,5 +85,6 @@ export const colors = {
   personalized5: "#FCE6E6",
   personalized6: "#ADB4BF",
   personalized7: "#85BCC7",
-  personalized8: "#F4FDFF"
+  personalized8: "#F4FDFF",
+  personalized9: "rgba(76, 76, 76, 0.5)",
 };

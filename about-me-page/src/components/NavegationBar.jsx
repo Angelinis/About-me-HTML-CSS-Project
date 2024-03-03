@@ -18,19 +18,25 @@ width: 400px;
 
 a.active button {
   background-color:${colors.gray[500]};
-  border-radius: 8px;
+  border-radius: 20px;
   min-width: 100px;
 }
-
 `
+
+
 const NavegationBarContainer = styled.div`
 display: flex;
 gap: 3.5rem;
-margin-right: auto;
-margin-left: auto;
-width: 500px;
-margin-top: 2rem;
-margin-bottom: 5rem;
+width: 520px;
+align-items: center;
+height: 4rem;
+position: fixed;
+margin-top: 20px;
+padding-right: 10px;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 40px; 
+background: ${colors.personalized9};
 `
 
 const FigureContainer = styled.div`
@@ -74,6 +80,9 @@ text-decoration: none;
 color: inherit;
 `
 
+const BackSpace = styled.div`
+height: 180px;
+`
 
 
 export default function NavegationBar() {
@@ -82,6 +91,7 @@ export default function NavegationBar() {
 
   return (
     <>
+    <BackSpace>
     <NavegationBarContainer>
     <NavegationContainer>
       
@@ -112,6 +122,7 @@ export default function NavegationBar() {
     </IconContext.Provider>
 
     </NavegationBarContainer>
+    </BackSpace>
     </>
   )
 }

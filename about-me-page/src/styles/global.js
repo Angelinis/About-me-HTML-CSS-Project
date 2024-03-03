@@ -95,5 +95,6 @@ export const global = css`
   }
   .main-container{
     margin-bottom: 60px;
+    position: relative;
   }
 `;
