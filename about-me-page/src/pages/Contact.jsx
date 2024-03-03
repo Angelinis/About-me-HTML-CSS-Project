@@ -1,3 +1,4 @@
+import FootBar from "../components/FootBar";
 import NavegationBar from "../components/NavegationBar";
 import { PageHeader } from "../components/PageHeader";
 
@@ -6,6 +7,7 @@ return (
   <>
     <NavegationBar/>
     <PageHeader children={"Contact Me"}/>
+    <FootBar/>
   </>
 )
 }

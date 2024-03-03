@@ -78,4 +78,12 @@ export const colors = {
   black: "#171717",
   transparentBlack: "rgba(0,0,0,.7)",
   white: "#FFFFFF",
+  personalized1: "#DBD3D8",
+  personalized2: "#3CB371",
+  personalized3: "#483C32",
+  personalized4: "#987B71",
+  personalized5: "#FCE6E6",
+  personalized6: "#ADB4BF",
+  personalized7: "#85BCC7",
+  personalized8: "#F4FDFF"
 };

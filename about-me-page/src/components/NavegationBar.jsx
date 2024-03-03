@@ -47,6 +47,7 @@ background: inherit;
 border-radius: 25px;
 justify-content: center;
 align-items: center;
+cursor:pointer;
 
 .selectedBackground {
   display: flex;
@@ -64,7 +65,8 @@ background-color: inherit;
 border: none;
 line-height: 2rem;
 font-size: 1.2rem;
-color: ${colors.white}
+color: ${colors.white};
+cursor:pointer;
 `
 
 const StyledLink = styled(Link)`

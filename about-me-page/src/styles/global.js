@@ -83,8 +83,8 @@ export const reset = css`
 
 export const global = css`
   body{
-    min-height: 100%;
-    overflow: hidden;
+    height: 100vh;
+    overflow-y: scroll;
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: ${font.primary};
@@ -92,5 +92,8 @@ export const global = css`
     width: 100%;
     margin: auto;
     background: ${colors.transparentBlack};
+  }
+  .main-container{
+    margin-bottom: 60px;
   }
 `;

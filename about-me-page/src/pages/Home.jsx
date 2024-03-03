@@ -6,6 +6,8 @@ import { IconContext } from "react-icons";
 import styled from "@emotion/styled";
 import { colors } from "../styles";
 import { PageDescription } from "../components/PageDescription";
+import {WorkSpaceContainer, WorkSpaceLarge, WorkSpaceShort} from "../components/WorkSpace";
+import FootBar from "../components/FootBar";
 
 const Container = styled.div`
 width: 1000px;
@@ -51,7 +53,17 @@ return (
 
       </Container>
     </IconContext.Provider>
-    <PageDescription>I have a passion for learning new technologies. Recently, I’ve been diving into Meta Quest 2, exploring its development and usage. </PageDescription>
+    <PageDescription>
+      I have a passion for learning new technologies. 
+      Recently, I’ve been diving into Meta Quest 2, exploring its development and usage. 
+    </PageDescription>
+
+    <WorkSpaceContainer>
+    <WorkSpaceShort>Game</WorkSpaceShort>
+    <WorkSpaceLarge>App Delivery</WorkSpaceLarge>
+    </WorkSpaceContainer>
+
+    <FootBar/>
   </>
 )
 }
