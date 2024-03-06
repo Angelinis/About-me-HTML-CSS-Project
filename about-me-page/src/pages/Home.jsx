@@ -9,6 +9,9 @@ import { PageDescription } from "../components/PageDescription";
 import {WorkSpaceContainer, WorkSpaceLarge, WorkSpaceShort} from "../components/WorkSpace";
 import FootBar from "../components/FootBar";
 
+import gameLogo from "../assets/EscapeINFLogo.png";
+
+
 const Container = styled.div`
 width: 1000px;
 margin-right: auto;
@@ -59,7 +62,7 @@ return (
     </PageDescription>
 
     <WorkSpaceContainer>
-    <WorkSpaceShort>Game</WorkSpaceShort>
+    <WorkSpaceShort sourceImage={gameLogo}>Game</WorkSpaceShort>
     <WorkSpaceLarge>App Delivery</WorkSpaceLarge>
     </WorkSpaceContainer>
 

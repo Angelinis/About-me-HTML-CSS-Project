@@ -1,16 +1,15 @@
 import styled from "@emotion/styled"
 import { colors } from "../styles"
 
-const StyledContainer = styled.div`
+const StyledShortContainer = styled.div`
 width: 500px;
 height: 600px;
 background: ${colors.personalized1};
 border-radius: 60px;
 `
 
-const StyledContainerAlternative = styled.div`
-max-width: 1000px;
-min-width: 500px;
+const StyledLargeContainer = styled.div`
+width: 1000px;
 height: 600px;
 background: ${colors.personalized5};
 border-radius: 60px;
@@ -27,19 +26,28 @@ gap: 80px;
 justify-content: space-between;
 `
 
+const StyledHeaderContainer = styled.div`
+background: ${colors.white};
+height: 60px;
+margin-top: 100px;
+`
+
 const StyledHeader = styled.h1`
 line-height: 3rem;
 font-size: 3rem;
 color: ${colors.black};
 text-align: right;
-margin-top: 100px;
 margin-right: 60px;
 margin-left: auto;
 `
 
-const StyledHeaderContainer = styled.div`
-
+const StyledImage = styled.img`
+width: 70%;
+margin-top: 60px;
+margin-right: auto;
+margin-left:auto;
 `
+
 
 export function WorkSpaceContainer({children}){
   return(
@@ -53,27 +61,31 @@ export function WorkSpaceContainer({children}){
 }
 
 
-export function WorkSpaceShort({children}){
+export function WorkSpaceShort({children, sourceImage}){
   return(
     <>
-      <StyledContainer>
+      <StyledShortContainer>
         <StyledHeaderContainer>
         <StyledHeader>{children}</StyledHeader>
         </StyledHeaderContainer>
-      </StyledContainer>
+
+        <StyledImage src={sourceImage}></StyledImage>
+      </StyledShortContainer>
     </>
   )
 
 }
 
-export function WorkSpaceLarge({children}){
+export function WorkSpaceLarge({children, sourceImage}){
   return(
     <>
-      <StyledContainerAlternative>
+      <StyledLargeContainer>
         <StyledHeaderContainer>
         <StyledHeader>{children}</StyledHeader>
         </StyledHeaderContainer>
-      </StyledContainerAlternative>
+
+        <StyledImage src={sourceImage}></StyledImage>
+      </StyledLargeContainer>
     </>
   )
 
