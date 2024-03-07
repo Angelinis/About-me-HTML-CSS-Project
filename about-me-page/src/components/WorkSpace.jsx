@@ -77,13 +77,51 @@ margin-right: auto;
 margin-left:auto;
 `
 
+const StyledPicture = styled.img`
+height: 100%;
+width: 100%;
+border-radius: 60px;
+`
 
+const StyledShortPictureContainer = styled.div`
+width: 400px;
+height: 600px;
+background: ${colors.personalized1};
+border-radius: 60px;
+`
+
+const StyledLargePictureContainer = styled.div`
+width: 800px;
+height: 600px;
+background: ${colors.personalized5};
+border-radius: 60px;
+`
 
 const StyledLink = styled(Link)`
 text-decoration: none;
 color: inherit;
 `
 
+export function PictureShortContainer({sourceImage}){
+  return(
+    <>
+    <StyledShortPictureContainer>
+      <StyledPicture src={sourceImage}></StyledPicture>
+    </StyledShortPictureContainer>
+    </>
+  )
+}
+
+
+export function PictureLargeContainer({sourceImage}){
+  return(
+    <>
+    <StyledLargePictureContainer>
+      <StyledPicture src={sourceImage}></StyledPicture>
+    </StyledLargePictureContainer>
+    </>
+  )
+}
 
 export function WorkSpaceContainer({children}){
   return(

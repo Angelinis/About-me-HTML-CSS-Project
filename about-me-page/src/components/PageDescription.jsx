@@ -34,6 +34,15 @@ margin-left: auto;
 margin-top: 5rem;
 margin-bottom: 3rem;
 `
+const ContentAlternativeWithBackground = styled.span`
+  display: inline;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  color: ${colors.gray[800]};
+  font-family: ${font.secondary};
+  background: ${colors.stone[300]};
+`
+
 
 export function PageDescription({children}){
   return (
@@ -50,6 +59,16 @@ export function PageDescriptionAlternative({children}){
     <>  
     <ContentContainerAlternative >
       <ContentAlternative>{children}</ContentAlternative>
+    </ContentContainerAlternative >
+    </>
+  )
+}
+
+export function PageDescriptionWithBackground({children}){
+  return (
+    <>  
+    <ContentContainerAlternative >
+      <p><ContentAlternativeWithBackground>{children}</ContentAlternativeWithBackground></p>
     </ContentContainerAlternative >
     </>
   )

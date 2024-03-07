@@ -90,12 +90,12 @@ return (
 
     <PageHeader children={"In progress."}/>
     <PageDescription>
-    Work in different states of design and development.
+    Ongoing projects at different stages of design and development, ranging from team research, to side projects.
     </PageDescription>
 
     <WorkSpaceContainer>
     <WorkSpaceLarge sourceImage={escapeVRApp} link={'https://github.com/Angelinis/VR_Escape_room_2021'} sourceIcon={escapeVRIcon} imageSize="diferent">Escape VR Game</WorkSpaceLarge>
-    <WorkSpaceShort sourceImage={hateDetectionNotebook} link={'https://colab.research.google.com/drive/12ve2Gfq77MJVa9bZw5b19v2n_7ER1-4T?usp=sharing'} sourceIcon={hateDetectionIcon} imageSize="diferent">Juridical Agent</WorkSpaceShort>
+    <WorkSpaceShort sourceImage={hateDetectionNotebook} link={'https://colab.research.google.com/drive/1VipKLBK1liKgPO3N6Ub9rdjeT9MGwHby?usp=sharing'} sourceIcon={hateDetectionIcon} imageSize="diferent">Juridical Agent</WorkSpaceShort>
     </WorkSpaceContainer>
 
     <FootBar/>
