@@ -10,6 +10,7 @@ import {WorkSpaceContainer, WorkSpaceLarge, WorkSpaceShort} from "../components/
 import FootBar from "../components/FootBar";
 
 import gameLogo from "../assets/EscapeINFLogo.png";
+import deliveryApp from "../assets/PhoneDeliveryApp.png";
 
 
 const Container = styled.div`
@@ -62,8 +63,8 @@ return (
     </PageDescription>
 
     <WorkSpaceContainer>
-    <WorkSpaceShort sourceImage={gameLogo}>Game</WorkSpaceShort>
-    <WorkSpaceLarge>App Delivery</WorkSpaceLarge>
+    <WorkSpaceShort sourceImage={gameLogo} link={'https://infgames.itch.io/escape-inf'}>Game</WorkSpaceShort>
+    <WorkSpaceLarge sourceImage={deliveryApp} link={'https://github.com/Angelinis/Eatable-Project-Remastered'}>Delivery Phone App</WorkSpaceLarge>
     </WorkSpaceContainer>
 
     <FootBar/>

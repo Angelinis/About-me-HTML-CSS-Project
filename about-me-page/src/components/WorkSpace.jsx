@@ -1,5 +1,6 @@
 import styled from "@emotion/styled"
 import { colors } from "../styles"
+import { Link } from "react-router-dom"
 
 const StyledShortContainer = styled.div`
 width: 500px;
@@ -29,7 +30,9 @@ justify-content: space-between;
 const StyledHeaderContainer = styled.div`
 background: ${colors.white};
 height: 60px;
-margin-top: 100px;
+padding-top: 100px;
+border-top-left-radius: 60px;
+border-top-right-radius: 60px;
 `
 
 const StyledHeader = styled.h1`
@@ -37,15 +40,33 @@ line-height: 3rem;
 font-size: 3rem;
 color: ${colors.black};
 text-align: right;
-margin-right: 60px;
+padding-right: 60px;
+padding-bottom: 20px;
 margin-left: auto;
+background: ${colors.white};
 `
 
-const StyledImage = styled.img`
+const StyledImageShort = styled.img`
 width: 70%;
-margin-top: 60px;
+max-height: 50%;
+margin-top: 120px;
 margin-right: auto;
 margin-left:auto;
+`
+
+const StyledImageLarge = styled.img`
+width: 20%;
+max-height: 50%;
+margin-top: 120px;
+margin-right: auto;
+margin-left:auto;
+`
+
+
+
+const StyledLink = styled(Link)`
+text-decoration: none;
+color: inherit;
 `
 
 
@@ -61,31 +82,36 @@ export function WorkSpaceContainer({children}){
 }
 
 
-export function WorkSpaceShort({children, sourceImage}){
+export function WorkSpaceShort({children, sourceImage, link}){
   return(
     <>
-      <StyledShortContainer>
+    <StyledLink to={link} target="_blank">      
+    <StyledShortContainer>
         <StyledHeaderContainer>
         <StyledHeader>{children}</StyledHeader>
         </StyledHeaderContainer>
 
-        <StyledImage src={sourceImage}></StyledImage>
+        <StyledImageShort src={sourceImage}></StyledImageShort>
       </StyledShortContainer>
+    </StyledLink>
+
     </>
   )
 
 }
 
-export function WorkSpaceLarge({children, sourceImage}){
+export function WorkSpaceLarge({children, sourceImage, link}){
   return(
     <>
+    <StyledLink to={link} target="_blank"> 
       <StyledLargeContainer>
         <StyledHeaderContainer>
         <StyledHeader>{children}</StyledHeader>
         </StyledHeaderContainer>
 
-        <StyledImage src={sourceImage}></StyledImage>
+        <StyledImageLarge src={sourceImage}></StyledImageLarge>
       </StyledLargeContainer>
+    </StyledLink>
     </>
   )
 
