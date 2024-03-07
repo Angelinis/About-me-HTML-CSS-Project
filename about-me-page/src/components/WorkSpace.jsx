@@ -17,20 +17,19 @@ border-radius: 60px;
 `
 
 const StyledMainContainer= styled.div`
-margin-left: 30px;
-margin-right: 30px;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: 80px;
 margin-top: 80px;
 display: flex;
 max-width: auto;
-gap: 80px;
-justify-content: space-between;
+justify-content: space-around;
 `
 
 const StyledHeaderContainer = styled.div`
 background: ${colors.white};
-height: 60px;
 padding-top: 100px;
+display: flex;
 border-top-left-radius: 60px;
 border-top-right-radius: 60px;
 `
@@ -42,22 +41,38 @@ color: ${colors.black};
 text-align: right;
 padding-right: 60px;
 padding-bottom: 20px;
-margin-left: auto;
 background: ${colors.white};
 `
+
+const StyledIconLanguage = styled.img`
+background: ${colors.white};
+height: 55px;
+margin-left: auto;
+margin-right: 20px;
+filter: grayscale(50%);
+`
+
 
 const StyledImageShort = styled.img`
 width: 70%;
 max-height: 50%;
-margin-top: 120px;
+margin-top: 110px;
 margin-right: auto;
 margin-left:auto;
 `
 
 const StyledImageLarge = styled.img`
-width: 20%;
+width: 18%;
 max-height: 50%;
-margin-top: 120px;
+margin-top: 110px;
+margin-right: auto;
+margin-left:auto;
+`
+
+
+const StyledImageAlternative = styled.img`
+max-height: 50%;
+margin-top: 110px;
 margin-right: auto;
 margin-left:auto;
 `
@@ -82,16 +97,19 @@ export function WorkSpaceContainer({children}){
 }
 
 
-export function WorkSpaceShort({children, sourceImage, link}){
+export function WorkSpaceShort({children, sourceImage, sourceIcon, link, imageSize = "default"}){
   return(
     <>
     <StyledLink to={link} target="_blank">      
     <StyledShortContainer>
         <StyledHeaderContainer>
-        <StyledHeader>{children}</StyledHeader>
+          <StyledIconLanguage src={sourceIcon}></StyledIconLanguage>
+          <StyledHeader>{children}</StyledHeader>
         </StyledHeaderContainer>
 
-        <StyledImageShort src={sourceImage}></StyledImageShort>
+        {
+        imageSize=='default'? <StyledImageShort src={sourceImage}></StyledImageShort> : <StyledImageAlternative src={sourceImage}></StyledImageAlternative>
+        }
       </StyledShortContainer>
     </StyledLink>
 
@@ -100,16 +118,18 @@ export function WorkSpaceShort({children, sourceImage, link}){
 
 }
 
-export function WorkSpaceLarge({children, sourceImage, link}){
+export function WorkSpaceLarge({children, sourceImage, sourceIcon, link, imageSize = "default"}){
   return(
     <>
     <StyledLink to={link} target="_blank"> 
       <StyledLargeContainer>
         <StyledHeaderContainer>
-        <StyledHeader>{children}</StyledHeader>
+          <StyledIconLanguage src={sourceIcon}></StyledIconLanguage>
+          <StyledHeader>{children}</StyledHeader>
         </StyledHeaderContainer>
-
-        <StyledImageLarge src={sourceImage}></StyledImageLarge>
+        {
+        imageSize=='default'? <StyledImageLarge src={sourceImage}></StyledImageLarge> : <StyledImageAlternative src={sourceImage}></StyledImageAlternative>
+        }
       </StyledLargeContainer>
     </StyledLink>
     </>

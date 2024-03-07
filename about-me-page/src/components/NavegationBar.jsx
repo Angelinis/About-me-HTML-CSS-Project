@@ -33,6 +33,7 @@ height: 4rem;
 position: fixed;
 margin-top: 20px;
 padding-right: 10px;
+z-index: 999;
 left: 50%;
 transform: translateX(-50%);
 border-radius: 40px; 
