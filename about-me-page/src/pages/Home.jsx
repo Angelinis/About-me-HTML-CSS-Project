@@ -25,24 +25,28 @@ import escapeVRIcon from "../assets/Unity.png";
 
 
 const Container = styled.div`
-width: 1000px;
+width: 95%;
 margin-right: auto;
 margin-left: auto;
+height: 100%;
 `
 
 
 const FigureContainer = styled.div`
 display: flex;
 justify-content: space-between;
-margin-top: 1.5rem;
+width: 95%;
+margin-top: 5vw;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 5vw;
 `
 
 const FigureBackground = styled.div`
 display: flex;
-height: 4rem;
-width: 4rem;
+width: 8%;
 background: ${colors.gray[300]};
-border-radius: 25px;
+border-radius: 40px;
 justify-content: center;
 align-items: center;
 `
@@ -52,12 +56,12 @@ export default function Home() {
 return (
   <>
     <NavegationBar/>
-    <IconContext.Provider value={{ color: colors.gray[800], size: "3rem" }}>
+    <IconContext.Provider value={{ color: colors.gray[800], size: "60%" }}>
 
       <Container>
 
         <PageHeader children={"Hi! I am Angelo."}/>
-        <PageHeader children={"A full stack designer."}/>
+        <PageHeader children={"A full stack developer."}/>
 
         <FigureContainer>
           <FigureBackground><FaChessKing/></FigureBackground>
@@ -90,7 +94,8 @@ return (
 
     <PageHeader children={"In progress."}/>
     <PageDescription>
-    Ongoing projects at different stages of design and development, ranging from team research, to side projects.
+    Ongoing projects at different stages of design 
+     and development, <br/> ranging from team research, to side projects.
     </PageDescription>
 
     <WorkSpaceContainer>

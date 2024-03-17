@@ -6,7 +6,7 @@ import ProfileImage from "../components/ProfileImage";
 import { PageDescriptionAlternative, PageDescriptionWithBackground } from "../components/PageDescription";
 import { colors } from "../styles";
 import FootBar from "../components/FootBar";
-import { PictureLargeContainer, PictureShortContainer } from "../components/WorkSpace";
+import { PictureLargeContainer, PictureShortContainer, PictureShortContainer2 } from "../components/WorkSpace";
 
 import wallpaper_1 from "../assets/Wallpaper/Wallpaper_1.jpeg";
 import wallpaper_2 from "../assets/Wallpaper/Wallpaper_5.jpeg";
@@ -18,23 +18,42 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: 80px;
 margin-top: 100px;
-display: flex;
+display: grid;
 justify-content: space-around;
-width: 1300px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: "picture1 picture2 picture2";
+width: 80%;
+gap: 50px;
+@media only screen and (max-width: 800px) {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "picture1"
+  "picture2"
+  ;
+}
 `
 
 
 const ProfileContainer = styled.div`
-width: 1200px;
+width: 80%;
 margin-right: auto;
 margin-left: auto;
-margin-top: 6rem;
+margin-top: 4rem;
 margin-bottom: 2rem;
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: "content1 content2 content2";
+@media only screen and (max-width: 1000px) {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "content2"
+  "content1"
+  ;
+}
 ` 
 const Header = styled.h2`
-  line-height: 4rem;
-  font-size: 4rem;
+  line-height: 120%;
+  font-size: 240%;
   color: ${colors.stone[300]};
   text-align: center;
 `
@@ -61,6 +80,7 @@ display:flex;
 justify-content: center;
 margin-right: auto;
 margin-left: auto;
+width: 100%;
 `
 
 const HeaderAndDescriptionContainer = styled.div`
@@ -68,7 +88,9 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 margin-right: auto;
-margin-left: 2rem;
+margin-left: auto;
+grid-area: content2;
+width: 100%;
 `
 
 
@@ -95,9 +117,8 @@ return (
 
     <PageHeader children={". . ."}/>
 
-    <StyledMainContainer>
       <PictureLargeContainer sourceImage={wallpaper_3} />
-    </StyledMainContainer>  
+
 
     <PageHeader children={". . ."}/>
 
@@ -129,7 +150,7 @@ return (
 
     <StyledMainContainer>
       <PictureShortContainer sourceImage={wallpaper_1} />
-      <PictureLargeContainer sourceImage={wallpaper_2} />
+      <PictureShortContainer2  sourceImage={wallpaper_2} />
     </StyledMainContainer>
 
 

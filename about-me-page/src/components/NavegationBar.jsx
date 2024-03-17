@@ -27,14 +27,13 @@ a.active button {
 const NavegationBarContainer = styled.div`
 display: flex;
 gap: 3.5rem;
-width: 520px;
 align-items: center;
 height: 4rem;
 position: fixed;
 margin-top: 20px;
 padding-right: 10px;
 z-index: 999;
-left: 50%;
+left: 50vw;
 transform: translateX(-50%);
 border-radius: 40px; 
 background: ${colors.personalized9};
@@ -112,7 +111,7 @@ export default function NavegationBar() {
              
     </NavegationContainer>
     
-    <IconContext.Provider value={{ color: colors.white, size: "1.5rem" }}>
+    {/* <IconContext.Provider value={{ color: colors.white, size: "1.5rem" }}>
 
       <FigureContainer>
         
@@ -120,7 +119,7 @@ export default function NavegationBar() {
         <FigureBackground><FaSun/></FigureBackground>
 
       </FigureContainer>
-    </IconContext.Provider>
+    </IconContext.Provider> */}
 
     </NavegationBarContainer>
     </BackSpace>

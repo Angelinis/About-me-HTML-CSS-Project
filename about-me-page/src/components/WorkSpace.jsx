@@ -81,20 +81,40 @@ const StyledPicture = styled.img`
 height: 100%;
 width: 100%;
 border-radius: 60px;
+margin-right: auto;
+margin-left: auto;
 `
 
 const StyledShortPictureContainer = styled.div`
-width: 400px;
+width: 100%;
 height: 600px;
 background: ${colors.personalized1};
 border-radius: 60px;
+grid-area: picture1;
+margin-right:auto;
+margin-left:auto;
+`
+
+const StyledShortPictureContainer2 = styled.div`
+width: 100%;
+height: 600px;
+background: ${colors.personalized1};
+border-radius: 60px;
+margin-right:auto;
+margin-left:auto;
+grid-area: picture2;
 `
 
 const StyledLargePictureContainer = styled.div`
-width: 800px;
-height: 600px;
+width: 60%;
+height: 50%;
 background: ${colors.personalized5};
 border-radius: 60px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 8vw;
+margin-bottom: 2vw;
+
 `
 
 const StyledLink = styled(Link)`
@@ -111,6 +131,19 @@ export function PictureShortContainer({sourceImage}){
     </>
   )
 }
+
+
+export function PictureShortContainer2({sourceImage}){
+  return(
+    <>
+    <StyledShortPictureContainer2>
+      <StyledPicture src={sourceImage}></StyledPicture>
+    </StyledShortPictureContainer2>
+    </>
+  )
+}
+
+
 
 
 export function PictureLargeContainer({sourceImage}){
