@@ -38,9 +38,10 @@ const ContentAlternativeWithBackground = styled.span`
   display: inline;
   line-height: 2.5rem;
   font-size: 1.3rem;
-  color: ${colors.gray[800]};
+  // color: ${colors.gray[800]};
+  color: ${colors.stone[300]};
   font-family: ${font.secondary};
-  background: ${colors.stone[300]};
+  // background: ${colors.stone[300]};
 `
 
 

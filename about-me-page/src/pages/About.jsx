@@ -61,9 +61,10 @@ const Header = styled.h2`
 const HeaderAlternative = styled.h2`
   line-height: 5.5vw;
   font-size: 5.5vw;
-  color: ${colors.gray[800]};
+  // color: ${colors.gray[800]};
+  color: ${colors.stone[300]};
   text-align: center;
-  background: ${colors.stone[300]};
+  // background: ${colors.stone[300]};
 `
 
 const HeaderAlternativeContainer = styled.div`

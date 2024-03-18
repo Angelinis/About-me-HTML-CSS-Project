@@ -91,8 +91,8 @@ line-height: 3vw;
 font-size: 3vw;
 color: ${colors.black};
 text-align: right;
-padding-right: 10%;
 padding-bottom: 20px;
+margin-right: auto;
 background: ${colors.white};
 @media only screen and (max-width: 800px) {
   line-height: 7vw;
