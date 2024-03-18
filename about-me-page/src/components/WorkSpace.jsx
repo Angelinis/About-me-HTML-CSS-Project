@@ -80,7 +80,7 @@ gap: 15px;
 
 const StyledHeaderContainer = styled.div`
 background: ${colors.white};
-padding-top: 100px;
+padding-top: 45px;
 display: flex;
 border-top-left-radius: 60px;
 border-top-right-radius: 60px;
@@ -143,7 +143,7 @@ margin-left: auto;
 `
 
 const StyledShortPictureContainer = styled.div`
-width: 100%;
+max-width: 100%;
 height: 600px;
 background: ${colors.personalized1};
 border-radius: 60px;

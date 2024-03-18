@@ -24,7 +24,7 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas: "picture1 picture2 picture2";
 width: 80%;
 gap: 50px;
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   grid-template-columns: 1fr;
   grid-template-areas:
   "picture1"
@@ -43,7 +43,7 @@ margin-bottom: 2rem;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas: "content1 content2 content2";
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1150px) {
   grid-template-columns: 1fr;
   grid-template-areas:
   "content2"

@@ -80,7 +80,7 @@ return (
 
     <WorkSpaceContainerAlternative>
     <WorkSpaceShort sourceImage={gameWebpage} link={'https://infgames.itch.io/escape-inf'} sourceIcon={gameIcon}>Escape Game</WorkSpaceShort>
-    <WorkSpaceLarge sourceImage={deliveryApp} link={'https://github.com/Angelinis/Eatable-Project-Remastered'} sourceIcon={deliveryIcon}>Delivery Phone App</WorkSpaceLarge>
+    <WorkSpaceLarge sourceImage={deliveryApp} link={'https://github.com/Angelinis/Eatable-Project-Remastered'} sourceIcon={deliveryIcon}>Delivery App</WorkSpaceLarge>
     </WorkSpaceContainerAlternative>
 
     <WorkSpaceContainer>

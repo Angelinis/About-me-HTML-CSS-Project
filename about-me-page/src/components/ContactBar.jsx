@@ -15,8 +15,12 @@ display:flex;
 align-items: center;
 justify-content: space-between;
 
-@media only screen and (max-width: 550px) {
-  width: 80%;
+@media only screen and (max-width: 1000px) {
+  width: 65%;
+}
+
+@media only screen and (max-width: 700px) {
+  width: 70%;
 }
 `
 
@@ -27,9 +31,14 @@ color: ${colors.black};
 text-align: left;
 margin-left: 20px;
 
-@media only screen and (max-width: 550px) {
-  line-height: 5vw;
-  font-size: 5vw;
+@media only screen and (max-width: 1000px) {
+  line-height: 2.8vw;
+  font-size: 2.8vw;
+}
+
+@media only screen and (max-width: 700px) {
+  line-height: 4.2vw;
+  font-size: 4.2vw;
 }
 
 `
