@@ -87,6 +87,7 @@ border-top-right-radius: 60px;
 `
 
 const StyledHeader = styled.h1`
+padding-top: 0.5%;
 line-height: 3vw;
 font-size: 3vw;
 color: ${colors.black};
@@ -110,16 +111,16 @@ filter: grayscale(50%);
 
 
 const StyledImageShort = styled.img`
-width: 50%;
-max-height: 50%;
+width: 60%;
+height: 55%;
 margin-top: 50px;
 margin-right: auto;
 margin-left:auto;
 `
 
 const StyledImageLarge = styled.img`
-width: 18%;
-max-height: 50%;
+width: 25%;
+height: 50%;
 margin-top: 50px;
 margin-right: auto;
 margin-left:auto;

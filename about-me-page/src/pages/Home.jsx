@@ -89,7 +89,9 @@ return (
     </WorkSpaceContainer>
 
     <WorkSpaceContainerAlternative2>
-    <WorkSpaceLarge sourceImage={hateDetectionNotebook} link={'https://colab.research.google.com/drive/12ve2Gfq77MJVa9bZw5b19v2n_7ER1-4T?usp=sharing'} sourceIcon={hateDetectionIcon} imageSize="diferent">Detection of Hate Speech</WorkSpaceLarge>
+    <WorkSpaceLarge sourceImage={hateDetectionNotebook} 
+    link={'https://colab.research.google.com/drive/12ve2Gfq77MJVa9bZw5b19v2n_7ER1-4T?usp=sharing'} sourceIcon={hateDetectionIcon} imageSize="diferent">
+      Hate Speech Detection</WorkSpaceLarge>
     </WorkSpaceContainerAlternative2>
 
 
