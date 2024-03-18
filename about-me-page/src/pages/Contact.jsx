@@ -7,6 +7,9 @@ import { PageHeader } from "../components/PageHeader";
 import linkedinIcon from "../assets/Linkedin.png";
 import githubIcon from "../assets/Github.png";
 import gmailIcon from "../assets/Gmail.png";
+import pdfIcon from "../assets/Pdf.png";
+
+import cv from "/files/CV.pdf";
 
 
 export default function Contact() {
@@ -21,6 +24,7 @@ return (
     <ContactBar sourceImage={gmailIcon} link='mailto:angmogollon@gmail.com'>Send me an Email</ContactBar>
     <ContactBar sourceImage={linkedinIcon} link='https://www.linkedin.com/in/angelo-coronado-m/'>Professional Network</ContactBar>
     <ContactBar sourceImage={githubIcon} link='https://github.com/Angelinis'>Developer Portfolio</ContactBar>
+    <ContactBar sourceImage={pdfIcon} link={cv}>Curriculum</ContactBar>
 
     <FootBar/>
   </>

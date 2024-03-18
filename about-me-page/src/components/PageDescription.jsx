@@ -28,7 +28,7 @@ const ContentAlternative = styled.p`
 const ContentContainerAlternative = styled.div`
 display:flex;
 justify-content: center;
-width: 90%;
+width: 75%;
 margin-right: auto;
 margin-left: auto;
 margin-top: 5rem;

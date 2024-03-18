@@ -6,7 +6,8 @@ import { IconContext } from "react-icons";
 import styled from "@emotion/styled";
 import { colors } from "../styles";
 import { PageDescription } from "../components/PageDescription";
-import {WorkSpaceContainer, WorkSpaceLarge, WorkSpaceShort} from "../components/WorkSpace";
+import {WorkSpaceContainer, WorkSpaceContainerAlternative, WorkSpaceContainerAlternative2,
+  WorkSpaceLarge, WorkSpaceShort} from "../components/WorkSpace";
 import FootBar from "../components/FootBar";
 
 import gameWebpage from "../assets/EscapeINFLogo.png";
@@ -77,19 +78,19 @@ return (
       Recently, I’ve been diving into Meta Quest 2, exploring its development and usage. 
     </PageDescription>
 
-    <WorkSpaceContainer>
+    <WorkSpaceContainerAlternative>
     <WorkSpaceShort sourceImage={gameWebpage} link={'https://infgames.itch.io/escape-inf'} sourceIcon={gameIcon}>Escape Game</WorkSpaceShort>
     <WorkSpaceLarge sourceImage={deliveryApp} link={'https://github.com/Angelinis/Eatable-Project-Remastered'} sourceIcon={deliveryIcon}>Delivery Phone App</WorkSpaceLarge>
-    </WorkSpaceContainer>
+    </WorkSpaceContainerAlternative>
 
     <WorkSpaceContainer>
     <WorkSpaceLarge sourceImage={tweetApp} link={'https://github.com/Angelinis/tweetable-app'} sourceIcon={tweetIcon}>Tweet App</WorkSpaceLarge>
     <WorkSpaceShort sourceImage={passwordApp} link={'https://github.com/Angelinis/React-Native-Gerador'} sourceIcon={passwordIcon} imageSize="diferent">Password App</WorkSpaceShort>
     </WorkSpaceContainer>
 
-    <WorkSpaceContainer>
+    <WorkSpaceContainerAlternative2>
     <WorkSpaceLarge sourceImage={hateDetectionNotebook} link={'https://colab.research.google.com/drive/12ve2Gfq77MJVa9bZw5b19v2n_7ER1-4T?usp=sharing'} sourceIcon={hateDetectionIcon} imageSize="diferent">Detection of Hate Speech</WorkSpaceLarge>
-    </WorkSpaceContainer>
+    </WorkSpaceContainerAlternative2>
 
 
     <PageHeader children={"In progress."}/>

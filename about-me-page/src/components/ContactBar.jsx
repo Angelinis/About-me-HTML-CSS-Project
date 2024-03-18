@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 
 const StyledContainer = styled.div`
-width: 800px;
+width: 40%;
 height: 100px;
 background: ${colors.stone[300]};
 border-radius: 20px;
@@ -14,18 +14,28 @@ margin-bottom: 40px;
 display:flex;
 align-items: center;
 justify-content: space-between;
+
+@media only screen and (max-width: 550px) {
+  width: 80%;
+}
 `
 
 const StyledHeader = styled.h2`
-line-height: 2rem;
-font-size: 2rem;
+line-height: 1.8vw;
+font-size: 1.8vw;
 color: ${colors.black};
 text-align: left;
 margin-left: 20px;
+
+@media only screen and (max-width: 550px) {
+  line-height: 5vw;
+  font-size: 5vw;
+}
+
 `
 
 const StyledIcon = styled.img`
-height: 55px;
+height: 40px;
 margin-left: auto;
 margin-right: 20px;
 filter: grayscale(50%);

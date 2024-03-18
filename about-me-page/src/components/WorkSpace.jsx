@@ -3,17 +3,19 @@ import { colors } from "../styles"
 import { Link } from "react-router-dom"
 
 const StyledShortContainer = styled.div`
-width: 500px;
-height: 600px;
+max-width: 90vw;
+height: 500px;
 background: ${colors.personalized1};
 border-radius: 60px;
+grid-area: shortcontainer;
 `
 
 const StyledLargeContainer = styled.div`
-width: 1000px;
-height: 600px;
+max-width: 90vw;
+height: 500px;
 background: ${colors.personalized5};
 border-radius: 60px;
+grid-area: largecontainer;
 `
 
 const StyledMainContainer= styled.div`
@@ -21,10 +23,60 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: 80px;
 margin-top: 80px;
-display: flex;
-max-width: auto;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "largecontainer shortcontainer";
+max-width: 90%;
 justify-content: space-around;
+gap: 15px;
+
+@media only screen and (max-width: 800px) {
+  grid-template-columns: 1fr;
+  grid-template-areas: "largecontainer" 
+  "shortcontainer";
+}
 `
+
+
+const StyledMainContainerAlternative= styled.div`
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 80px;
+margin-top: 80px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "shortcontainer largecontainer";
+max-width: 90%;
+justify-content: space-around;
+gap: 15px;
+
+@media only screen and (max-width: 800px) {
+  grid-template-columns: 1fr;
+  grid-template-areas: "shortcontainer"
+  "largecontainer" ;
+}
+`
+
+const StyledMainContainerAlternative2= styled.div`
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 80px;
+margin-top: 80px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "largecontainer largecontainer";
+max-width: 90%;
+justify-content: space-around;
+gap: 15px;
+
+@media only screen and (max-width: 800px) {
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "largecontainer" ;
+}
+`
+
+
 
 const StyledHeaderContainer = styled.div`
 background: ${colors.white};
@@ -35,13 +87,17 @@ border-top-right-radius: 60px;
 `
 
 const StyledHeader = styled.h1`
-line-height: 3rem;
-font-size: 3rem;
+line-height: 3vw;
+font-size: 3vw;
 color: ${colors.black};
 text-align: right;
-padding-right: 60px;
+padding-right: 10%;
 padding-bottom: 20px;
 background: ${colors.white};
+@media only screen and (max-width: 800px) {
+  line-height: 7vw;
+  font-size: 7vw;
+}
 `
 
 const StyledIconLanguage = styled.img`
@@ -54,9 +110,9 @@ filter: grayscale(50%);
 
 
 const StyledImageShort = styled.img`
-width: 70%;
+width: 50%;
 max-height: 50%;
-margin-top: 110px;
+margin-top: 50px;
 margin-right: auto;
 margin-left:auto;
 `
@@ -64,15 +120,15 @@ margin-left:auto;
 const StyledImageLarge = styled.img`
 width: 18%;
 max-height: 50%;
-margin-top: 110px;
+margin-top: 50px;
 margin-right: auto;
 margin-left:auto;
 `
 
 
 const StyledImageAlternative = styled.img`
-max-height: 50%;
-margin-top: 110px;
+max-height: 45%;
+margin-top: 50px;
 margin-right: auto;
 margin-left:auto;
 `
@@ -167,12 +223,35 @@ export function WorkSpaceContainer({children}){
 
 }
 
+export function WorkSpaceContainerAlternative({children}){
+  return(
+    <>
+      <StyledMainContainerAlternative>
+        {children}
+      </StyledMainContainerAlternative>
+    </>
+  )
+
+}
+
+export function WorkSpaceContainerAlternative2({children}){
+  return(
+    <>
+      <StyledMainContainerAlternative2>
+        {children}
+      </StyledMainContainerAlternative2>
+    </>
+  )
+
+}
+
 
 export function WorkSpaceShort({children, sourceImage, sourceIcon, link, imageSize = "default"}){
   return(
     <>
-    <StyledLink to={link} target="_blank">      
     <StyledShortContainer>
+    <StyledLink to={link} target="_blank">      
+
         <StyledHeaderContainer>
           <StyledIconLanguage src={sourceIcon}></StyledIconLanguage>
           <StyledHeader>{children}</StyledHeader>
@@ -181,8 +260,9 @@ export function WorkSpaceShort({children, sourceImage, sourceIcon, link, imageSi
         {
         imageSize=='default'? <StyledImageShort src={sourceImage}></StyledImageShort> : <StyledImageAlternative src={sourceImage}></StyledImageAlternative>
         }
-      </StyledShortContainer>
     </StyledLink>
+
+    </StyledShortContainer>
 
     </>
   )
@@ -192,8 +272,9 @@ export function WorkSpaceShort({children, sourceImage, sourceIcon, link, imageSi
 export function WorkSpaceLarge({children, sourceImage, sourceIcon, link, imageSize = "default"}){
   return(
     <>
-    <StyledLink to={link} target="_blank"> 
       <StyledLargeContainer>
+      <StyledLink to={link} target="_blank"> 
+
         <StyledHeaderContainer>
           <StyledIconLanguage src={sourceIcon}></StyledIconLanguage>
           <StyledHeader>{children}</StyledHeader>
@@ -201,8 +282,8 @@ export function WorkSpaceLarge({children, sourceImage, sourceIcon, link, imageSi
         {
         imageSize=='default'? <StyledImageLarge src={sourceImage}></StyledImageLarge> : <StyledImageAlternative src={sourceImage}></StyledImageAlternative>
         }
+        </StyledLink>
       </StyledLargeContainer>
-    </StyledLink>
     </>
   )
 
