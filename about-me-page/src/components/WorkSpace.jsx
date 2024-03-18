@@ -111,16 +111,16 @@ filter: grayscale(50%);
 
 
 const StyledImageShort = styled.img`
-width: 60%;
-height: 55%;
+max-height: 45%;
+
 margin-top: 50px;
 margin-right: auto;
 margin-left:auto;
 `
 
 const StyledImageLarge = styled.img`
-width: 25%;
-height: 50%;
+max-height: 45%;
+
 margin-top: 50px;
 margin-right: auto;
 margin-left:auto;
