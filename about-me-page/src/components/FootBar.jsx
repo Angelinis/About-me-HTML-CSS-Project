@@ -15,6 +15,7 @@ margin-right: auto;
 margin-left: auto;
 width: 30%;
 margin-top: 80px;
+margin-bottom: 40px;
 gap: 30px;
 
 @media only screen and (max-width: 550px) {
