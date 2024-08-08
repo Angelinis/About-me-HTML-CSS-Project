@@ -94,9 +94,7 @@ export default function FootBar() {
         <NavegationButton>Github</NavegationButton>     
       </StyledLink>
              
-      {/* <StyledLink to={cv} target="_blank">
-        <NavegationButton>CV</NavegationButton>     
-      </StyledLink> */}
+ 
       </StyledContainer >
     </FootBarContainer>
     </>
