@@ -62,7 +62,7 @@ return (
       <Container>
 
         <PageHeader children={"Hi! I am Angelo."}/>
-        <PageHeader children={"A full stack developer."}/>
+        <PageHeader children={"A Web / VR developer."}/>
 
         <FigureContainer>
           <FigureBackground><FaChessKing/></FigureBackground>
