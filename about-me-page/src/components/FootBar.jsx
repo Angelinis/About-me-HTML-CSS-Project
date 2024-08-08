@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 import { colors } from "../styles/colors"
 import { Link } from "react-router-dom";
 import designerIcon from "../assets/designer.png";
-import cv from "/files/CV.pdf";
+// import cv from "/files/CV.pdf";
 
 
 const FootBarContainer = styled.div`
