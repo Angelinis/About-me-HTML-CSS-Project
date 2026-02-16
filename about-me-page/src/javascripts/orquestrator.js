@@ -1,16 +1,16 @@
 import { createEntity } from "./createEntity.js";
 
 // Import all assets as modules:
-import vrglasses from "../assets/objects/lowpoly_vr_glasses.glb";
-import navmesh from "../assets/objects/navmesh.gltf";
-import museumModel from "../assets/objects/museum2.glb";
-import unityLogo from "../assets/objects/unity_engine_logo.glb";
-import cLogo from "../assets/objects/c_logo.glb";
-import javascriptLogo from "../assets/objects/javascript_logo.glb";
-import mailLogo from "../assets/objects/mail.glb";
-import linkedinLogo from "../assets/objects/linkedin_logo.glb";
-import developerModel from "../assets/objects/developer.glb";
-import musicSound from "../assets/objects/music.wav";
+import vrglasses from "../assets/objects/lowpoly_vr_glasses.glb?url";
+import navmesh from "../assets/objects/navmesh.gltf?url";
+import museumModel from "../assets/objects/museum2.glb?url";
+import unityLogo from "../assets/objects/unity_engine_logo.glb?url";
+import cLogo from "../assets/objects/c_logo.glb?url";
+import javascriptLogo from "../assets/objects/javascript_logo.glb?url";
+import mailLogo from "../assets/objects/mail.glb?url";
+import linkedinLogo from "../assets/objects/linkedin_logo.glb?url";
+import developerModel from "../assets/objects/developer.glb?url";
+import musicSound from "../assets/objects/music.wav?url";
 
 window.addEventListener("DOMContentLoaded", () => {
   const scene = document.querySelector("#root");
