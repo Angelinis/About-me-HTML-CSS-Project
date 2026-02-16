@@ -5,10 +5,9 @@
   "scripts": {
     "dev": "serve ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": ">=24.x"
+  },
   "devDependencies": {
     "serve": "^14.2.5"
   }
