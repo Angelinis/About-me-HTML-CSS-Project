@@ -2,7 +2,7 @@ import { createEntity } from "./createEntity.js";
 
 // Import all assets as modules:
 import vrglasses from "../assets/objects/lowpoly_vr_glasses.glb";
-import navmesh from "../assets/objects/navmesh(3).gltf";
+import navmesh from "../assets/objects/navmesh.gltf";
 import museumModel from "../assets/objects/museum2.glb";
 import unityLogo from "../assets/objects/unity_engine_logo.glb";
 import cLogo from "../assets/objects/c_logo.glb";
