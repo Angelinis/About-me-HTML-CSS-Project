@@ -2,9 +2,9 @@
 
 ## What is this?
 
-“About-Me-Project” is a personal website for showcasing your portfolio. It has three sections: work, about, and contact.
+“About-Me-Project” is a personal website for showcasing your portfolio in a 3D environment. 
 
-The project is based on React with the concepts of components, libraries, etc.
+The project is based on A-frame.
 
 ![homepage](
 https://raw.githubusercontent.com/Angelinis/About-me-HTML-CSS-Project/main/Images/Screen_1.JPG)
@@ -16,15 +16,9 @@ https://raw.githubusercontent.com/Angelinis/About-me-HTML-CSS-Project/main/Image
 https://raw.githubusercontent.com/Angelinis/About-me-HTML-CSS-Project/main/Images/Screen_3.JPG)
 
 
-## React + Libraries
+## A-Frame + Vite
 
-This webpage was coded using React VITE.
-
-It uses the next libraries:
-
-- @Emotion for styling the components
-- Icons from react-icons
-- React-router-dom for navigating through the different pages
+This webpage was coded using A-Frame, and hosted through VITE.
 
 ## Getting Started
 
